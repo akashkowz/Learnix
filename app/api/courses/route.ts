@@ -16,3 +16,42 @@ export async function GET() {
     )
   }
 }
+export async function POST(req: Request) {
+  try {
+    await connect()
+
+    const body = await req.json()
+    const { cid, name, faculty } = body
+
+    if (!cid || !name || !faculty) {
+      return NextResponse.json(
+        { error: "All fields are required" },
+        { status: 400 }
+      )
+    }
+
+    const existing = await Course.findOne({ cid })
+    if (existing) {
+      return NextResponse.json(
+        { error: "Course already exists" },
+        { status: 409 }
+      )
+    }
+
+    const course = await Course.create({
+      cid,
+      name,
+      faculty,
+    })
+
+    return NextResponse.json(
+      { message: "Course added successfully", course },
+      { status: 201 }
+    )
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Failed to add course" },
+      { status: 500 }
+    )
+  }
+}
