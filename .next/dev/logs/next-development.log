@@ -1,0 +1,32 @@
+[00:00:03.272] Server  LOG     ✓ Ready in 2.6s
+[00:00:09.985] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:37.604] Server  LOG     {}
+[00:05:47.449] Browser LOG     courses from API: []
+[00:05:47.450] Browser LOG     courses from API: []
+[00:05:47.656] Browser LOG     courses from API: [{"__v":0,"_id":"698064970e4594c69c6d768d","cid":"CS101","faculty":"hc verma","name":"Physics 101","user":"698063af0e4594c69c6d768a"}]
+[00:06:58.277] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:53.372] Server  LOG     MongoDB connected successfully
+[00:21:53.373] Server  LOG     MongoDB connected successfully
+[00:21:53.374] Server  LOG     MongoDB connected successfully
+[00:21:53.375] Server  LOG     MongoDB connected successfully
+[00:21:53.376] Server  LOG     MongoDB connected successfully
+[00:21:53.377] Server  LOG     MongoDB connected successfully
+[00:22:33.127] Server  LOG     {}
+[00:23:11.163] Server  ERROR   (node:8808) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 connected listeners added to [NativeConnection]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[00:23:11.164] Server  ERROR   (node:8808) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [NativeConnection]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+[00:23:11.167] Browser LOG     courses from API: []
+[00:23:11.167] Browser LOG     courses from API: []
+[00:23:11.328] Browser LOG     courses from API: [{"__v":0,"_id":"698064970e4594c69c6d768d","cid":"CS101","faculty":"hc verma","name":"Physics 101","user":"698063af0e4594c69c6d768a"}]
+[00:23:40.227] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:44.713] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:15.500] Browser LOG     courses from API: []
+[00:24:15.500] Browser LOG     courses from API: []
+[00:24:15.662] Browser LOG     courses from API: [{"__v":0,"_id":"698064970e4594c69c6d768d","cid":"CS101","faculty":"hc verma","name":"Physics 101","user":"698063af0e4594c69c6d768a"}]
+[00:24:52.905] Browser LOG     courses from API: []
+[00:24:52.905] Browser LOG     courses from API: []
+[00:24:53.050] Browser LOG     courses from API: [{"__v":0,"_id":"698064970e4594c69c6d768d","cid":"CS101","faculty":"hc verma","name":"Physics 101","user":"698063af0e4594c69c6d768a"}]
+[00:26:12.691] Browser LOG     courses from API: []
+[00:26:12.691] Browser LOG     courses from API: []
+[00:26:12.833] Browser LOG     courses from API: [{"__v":0,"_id":"698064970e4594c69c6d768d","cid":"CS101","faculty":"hc verma","name":"Physics 101","user":"698063af0e4594c69c6d768a"}]
+[00:28:42.513] Server  LOG     {}

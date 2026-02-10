@@ -1,23 +1,26 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"
 
 const userSchema = new mongoose.Schema(
   {
-     role: {
+    role: {
       type: String,
-      enum: ["teacher", "student"], // Teacher or Student
+      enum: ["teacher", "student"],
       required: true,
     },
+
     name: {
       type: String,
       required: true,
       trim: true,
     },
-     username: {
+
+    username: {
       type: String,
       required: true,
       unique: true,
       trim: true,
     },
+
     email: {
       type: String,
       required: true,
@@ -25,19 +28,31 @@ const userSchema = new mongoose.Schema(
       lowercase: true,
       trim: true,
     },
+
     password: {
       type: String,
       required: true,
     },
+
    
+    courses: {
+      type: [
+        {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Course",
+        },
+      ],
+    },
+
     forgotPasswordToken: String,
     forgotPasswordTokenExpiry: Date,
     verifyToken: String,
     verifyTokenExpiry: Date,
   },
   { timestamps: true }
-);
+)
 
-const User = mongoose.models.users || mongoose.model("users", userSchema);
+const User =
+  mongoose.models.users || mongoose.model("users", userSchema)
 
-export default User;
+export default User

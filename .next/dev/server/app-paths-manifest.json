@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/signup/route": "app/api/auth/signup/route.js",
+  "/api/courses/route": "app/api/courses/route.js",
+  "/api/notes/route": "app/api/notes/route.js",
+  "/api/users/route": "app/api/users/route.js",
+  "/auth/educator/page": "app/auth/educator/page.js",
+  "/auth/student/page": "app/auth/student/page.js",
+  "/educator/[username]/page": "app/educator/[username]/page.js",
+  "/educator/[username]/upload-lec/page": "app/educator/[username]/upload-lec/page.js",
+  "/educator/[username]/upload-notes/page": "app/educator/[username]/upload-notes/page.js",
+  "/educator/[username]/upload-quiz/page": "app/educator/[username]/upload-quiz/page.js",
+  "/page": "app/page.js",
+  "/student/[username]/page": "app/student/[username]/page.js"
+}

@@ -1,31 +1,51 @@
+
+
 import { NextResponse } from "next/server"
 import Course from "@/models/course-model"
-import { connect } from "@/dbConnect/dbConnect"   
+import { connect } from "@/dbConnect/dbConnect"
+import mongoose from "mongoose"
 
-export async function GET() {
+export async function GET(req: Request) {
   try {
     await connect()
 
-    const courses = await Course.find({}, { _id: 0, __v: 0 })
+    const { searchParams } = new URL(req.url)
+    const userId = searchParams.get("userId")?.trim()
 
+    if (!userId || !mongoose.Types.ObjectId.isValid(userId)) {
+      return NextResponse.json(
+        { error: "Valid userId is required" },
+        { status: 400 }
+      )
+    }
+
+    const courses = await Course.find({ user: userId })
     return NextResponse.json(courses)
-  } catch (error: any) {
+  } catch (error) {
     return NextResponse.json(
       { error: "Failed to fetch courses" },
       { status: 500 }
     )
   }
 }
+
+
 export async function POST(req: Request) {
   try {
     await connect()
 
-    const body = await req.json()
-    const { cid, name, faculty } = body
+    const { cid, name, faculty, user } = await req.json()
 
-    if (!cid || !name || !faculty) {
+    if (!cid || !name || !user) {
       return NextResponse.json(
-        { error: "All fields are required" },
+        { error: "cid, name and user are required" },
+        { status: 400 }
+      )
+    }
+
+    if (!mongoose.Types.ObjectId.isValid(user)) {
+      return NextResponse.json(
+        { error: "Invalid userId" },
         { status: 400 }
       )
     }
@@ -42,6 +62,7 @@ export async function POST(req: Request) {
       cid,
       name,
       faculty,
+      user,
     })
 
     return NextResponse.json(

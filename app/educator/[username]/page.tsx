@@ -18,17 +18,17 @@ export default async function Dashboard({
     {
       title: "Recorded Lectures",
       description: "Upload and manage recorded videos",
-      href: `/educator/${teacher}/recorded-lec`,
+      href: `/educator/${teacher}/upload-lec`,
     },
     {
       title: "Notes",
       description: "Upload notes and study material",
-      href: `/educator/${teacher}/notes`,
+      href: `/educator/${teacher}/upload-notes`,
     },
     {
       title: "Quiz",
       description: "Create quizzes and upload results",
-      href: `/educator/${teacher}/quiz`,
+      href: `/educator/${teacher}/upload-quiz`,
     },
   ]
 

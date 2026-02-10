@@ -1,0 +1,23 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/_app": [
+      "static/chunks/bedd0_next_dist_compiled_c847fb3b._.js",
+      "static/chunks/bedd0_next_dist_shared_lib_af0064d5._.js",
+      "static/chunks/bedd0_next_dist_client_2382a258._.js",
+      "static/chunks/bedd0_next_dist_afadcc9c._.js",
+      "static/chunks/bedd0_next_app_a468ff3c.js",
+      "static/chunks/[next]_entry_page-loader_ts_ac25e82a._.js",
+      "static/chunks/bedd0_react-dom_7079a41b._.js",
+      "static/chunks/bedd0_796faacb._.js",
+      "static/chunks/[root-of-the-server]__b81eca33._.js",
+      "static/chunks/Downloads_Learnix_LearnixFinal_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-Downloads_Learnix_LearnixFinal_pages__app_65fa9a47._.js"
+    ]
+  },
+  "ampFirstPages": []
+}

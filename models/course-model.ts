@@ -1,17 +1,25 @@
 import mongoose from "mongoose"
 
 const CourseSchema = new mongoose.Schema({
-    cid:{
+  cid: {
     type: String,
     required: true,
     unique: true,
-    },
-    faculty: {
+  },
+
+  name: {
     type: String,
     required: true,
   },
-    name: {
+
+  faculty: {
     type: String,
+    required: true,
+  },
+
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "users",
     required: true,
   },
 })
